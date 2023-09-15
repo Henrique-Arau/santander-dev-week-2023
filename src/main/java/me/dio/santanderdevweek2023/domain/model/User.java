@@ -57,11 +57,11 @@ public class User {
         this.card = card;
     }
 
-    public List<Feature> getFeatures () {
+    public List<Taskbar.Feature> getFeatures () {
         return features;
     }
 
-    public void setFeatures (List<Feature> features) {
+    public void setFeatures (List<Taskbar.Feature> features) {
         this.features = features;
     }
 
