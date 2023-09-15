@@ -21,8 +21,9 @@ public class User {
     private Card card;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Taskbar.Feature> features;
+    private List<Feature> features;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
     public Long getId () {
@@ -57,11 +58,11 @@ public class User {
         this.card = card;
     }
 
-    public List<Taskbar.Feature> getFeatures () {
+    public List<Feature> getFeatures () {
         return features;
     }
 
-    public void setFeatures (List<Taskbar.Feature> features) {
+    public void setFeatures (List<Feature> features) {
         this.features = features;
     }
 
